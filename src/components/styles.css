@@ -136,7 +136,7 @@ a:hover {
     max-width: 100%;
     color: #f8f5f5;
     border-radius: 3%;
-    background-image: image-set(url(src/assets/cyber3.jpeg));
+    background-image: image-set(url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStYTK6BJ0wt5FztPfWC1TU9Id9ZjkspzfrzQ&s));
 }
 
 .services li:hover {
