@@ -46,7 +46,7 @@ nav ul li {
     border-radius: 4px;
     text-align: center;
     padding: 8px;
-    background-image: image-set(url(src/assets/cyber2));
+    background-image: image-set(url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp5KSS9ryiLSKDG79C87kqweZg7PoDjtDsQ&s));
 }
 
 .start >.in_image_text {
