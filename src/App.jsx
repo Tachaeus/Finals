@@ -39,7 +39,7 @@ function App() {
             <li><a href="">StackOverflow</a></li>
             <li><a href="">LinkedIn</a></li>
           </ul>
-          <img src="src/assets/cyber4.jpeg" alt="" /><br />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjQDyrP0wXXKuVSiLUA3lXcOscW4A-e6JTQ&s" alt="" /><br />
         </div><br />
         <ul className="meta">
           <li><a href="">Terms Of Service</a></li>
