@@ -44,7 +44,7 @@ nav ul li {
     border-radius: 4px;
     text-align: center;
     padding: 8px;
-    background-image: image-set(url(src/assets/cyber1.jpeg));
+    background-image: image-set(url(src/assets/cyber2.jpeg));
 }
 
 .start >.in_image_text {
