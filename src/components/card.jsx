@@ -1,18 +1,6 @@
 import React, {useState} from "react";
 
-export default function faqs() {
-    const questions = document.querySelectorAll(".question");
-    questions.forEach(question => {
-        question.addEventListener("click", () => {
-        let answer = question.nextElementSibling;
-        let questionIcon = question.previousElementSibling;
-        
-        answer.classList.toggle("active");
-        questionIcon.classList.toggle("active");
-    });
-});
 
-}
     return (
         <div className="main_area">
             <main>
@@ -111,8 +99,14 @@ export default function faqs() {
                         <button>Communicate</button>
                     </div><br />
                     <h3>People Often Wonder:</h3>
-                    <div class="FAQs">
-                        <div class="query">
+                    <div class="FAQs" {const questions = document.querysSelectorAll(".question")}>
+                        <div class="query" {        question.addEventListener("click", () => {
+        let answer = question.nextElementSibling;
+        let questionIcon = question.previousElementSibling;
+        
+        answer.classList.toggle("active");
+        questionIcon.classList.toggle("active");
+    });}>
                             <div class="question-icon">+</div>
                             <div class="question">What are some of Scriptor's hiring criteria for coders?</div>
                             <p class="answer">
