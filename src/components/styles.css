@@ -1,16 +1,25 @@
 .body {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    border: 1px solid #333;
+    border-radius: 5px;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.6;
-    max-width: 650px;
+    max-width: 100%;
+    min-width: 650px;
     margin: 0 auto;
     color: #220491;
-    margin: 0px 40px 0px 40px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 10px;
     background-color: #f8f5f5;
+}
+
+div {
+    transition: 3px 6s ease-in-out;
+}
+
+div:hover {
+    transform: translateY(3px);
 }
 
 h1 {
@@ -21,8 +30,8 @@ h1 {
 header nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: left;
 }
 
 nav ul {
@@ -48,7 +57,7 @@ nav ul li {
 }
 
 .start >.in_image_text {
-    max-width: 250px;
+    max-width: 50%;
     background-color: color-mix(in hwb decreasing hue, grey 20%, white 40%);
     border-radius: 6px;
     margin: 0px 190px 0px 200px;
@@ -78,15 +87,17 @@ a:hover {
 
 .find {
     display: flex;
+    max-width: max-content;
     grid-template-columns: repeat(2);
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #find {
     display: flex;
+    text-align: flex-start;
     flex-direction: column;
     max-width: 100%;
-    padding-left: 8px;
+    padding-left: 0px;
 }
 
 #find button {
@@ -99,10 +110,12 @@ a:hover {
 }
 
 .find img {
+    display: flex;
+    align-content: flex-end;
     size: 100%;
     max-height: 200px;
     border-radius: 5%;
-    margin: 0px 10px 0px 48px;
+    margin: 0px 10px 0px 10px;
 }
 
 .services ul {
@@ -128,6 +141,7 @@ a:hover {
     list-style: none;
     margin-right: 3px;
     overflow: auto;
+    transition: 4px 5s ease;
 }
 
 .services li:nth-child(3) {
@@ -139,7 +153,7 @@ a:hover {
 
 .services li:hover {
     transform: scale(1, 1.2);
-    padding-bottom: 2px;
+    padding-bottom: 1px;
 }
 
 .services button {
@@ -163,6 +177,7 @@ a:hover {
     max-width: max-content;
     background-color: color-mix(in xyz-d50, grey 50%, white 37%);
     text-wrap: none;
+    padding-left: 8px;
 }
 
 .testimonials li {
@@ -173,6 +188,11 @@ a:hover {
     margin: 4px;
     padding: 20px;
     text-wrap: nowrap;
+    transition: 4px 6s ease;
+}
+
+.testimonials li:hover {
+    transform: translateX(4px);
 }
 
 .credits {
@@ -242,7 +262,7 @@ a:hover {
     margin: 0px 130px 0px 270px;
 }
 
-.FAQs {
+.FAQs_in {
     margin: 16px;
     padding: 8px;
     border: 1px solid color-mix(in hwb decreasing hue, grey 20%, white 40%);
@@ -269,9 +289,9 @@ a:hover {
 
 .query>.question {
     background-color: color-mix(in hwb decreasing hue, grey 20%, white 40%);
-    font-size: 13px;
     padding: 12px;
     cursor: pointer;
+    border-bottom: 1px solid color-mix(in xyz, #eee 36%, #333 92%);
 }
 
 .question:first {
@@ -374,11 +394,11 @@ footer img {
     margin: 0px 5px 0px 10px
 }
 
-@media (max-width: 900px) and (min-width: 600px) {
+@media (min-width: 650px){
     body {
-        padding: 10px;
-        margin: auto;
-        margin: 20px;
+        padding: 0px;
+        margin: 0 auto;
+        margin: 0px;
     }
 
     .cards,

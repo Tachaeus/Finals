@@ -1,9 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-
+function Card() {
+    
     return (
         <div className="main_area">
             <main>
+                <section className="section">
                 <div className="start">
                     <div class="in_image_text">
                         <h3>Masterful Coding Solutions <br /> Optimizing Systems</h3>
@@ -20,6 +22,8 @@ import React, {useState} from "react";
                     </div>
                     <img src="src/assets/cyber1.jpeg" alt="" />
                 </div><br />
+                </section>
+                <section>
                 <p>Services Rendered</p>
                 <div className="services">
                     <ul>
@@ -49,11 +53,11 @@ import React, {useState} from "react";
                                 <p>Here are a sample few reviews <br />from some of our loyal clientel.</p>
                             </li>
                             <li>
-                                <p>"A project I worked on with a backend developer <br />from Scriptor was such a grand success, <br />I haven't stoped using it since."</p><br />
+                                <p>"A project I worked on with a backend developer from Scriptor <br />was such a grand success, I haven't stoped using it since."</p><br />
                                 <p>— Cliff D, 27</p>
                             </li>
                             <li>
-                                <p>"I was hesitant to try at first, <br />now I only recruit from Scriptor <br />when I need a collaborative team."</p>
+                                <p>"I was hesitant to try at first, now I only recruit from <br />Scriptor when I need a collaborative team."</p>
                                 <p>— Andy F, 38</p>
                             </li>
                             <li>
@@ -62,6 +66,8 @@ import React, {useState} from "react";
                             </li>
                         </ul>
                     </div><br />
+                    </section>
+                    <section>
                     <div className="credits">
                         <p>Partnered with</p>
                         <a href="https://github.com"><img src="src/assets/gh.jpeg" /></a>
@@ -93,20 +99,16 @@ import React, {useState} from "react";
                             </li>
                         </ul>
                     </div>
+                    </section>
+                    <section>
                     <div className="CTA_one">
                         <h3>Script Chats</h3>
                         <p>Get initiated into the world of programmers. <br />A global network of the best computer-minds <br />right at your finger tips.</p>
                         <button>Communicate</button>
                     </div><br />
                     <h3>People Often Wonder:</h3>
-                    <div class="FAQs" {const questions = document.querysSelectorAll(".question")}>
-                        <div class="query" {        question.addEventListener("click", () => {
-        let answer = question.nextElementSibling;
-        let questionIcon = question.previousElementSibling;
-        
-        answer.classList.toggle("active");
-        questionIcon.classList.toggle("active");
-    });}>
+                    <div class="FAQs">
+                        <div class="query">
                             <div class="question-icon">+</div>
                             <div class="question">What are some of Scriptor's hiring criteria for coders?</div>
                             <p class="answer">
@@ -132,7 +134,7 @@ import React, {useState} from "react";
                                 similarly allowed to market their skills and services at a fee.
                             </p>
                         </div>
-                        <script>{faqs}</script>
+                        <script></script>
                     </div><br />
                     <div className="CTA_two">
                         <div id="talk">
@@ -155,7 +157,10 @@ import React, {useState} from "react";
                         </div>
                         <p>You can expect a response within a day.</p>
                     </div>
+                    </section>
             </main>
         </div>
     );
 }
+
+export default Card;
