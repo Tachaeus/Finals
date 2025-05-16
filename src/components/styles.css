@@ -4,7 +4,7 @@
     border: 1px solid #333;
     border-radius: 5px;
     font-family: sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.6;
     max-width: 100%;
     min-width: 650px;
@@ -15,7 +15,7 @@
 }
 
 div {
-    transition: 3px 6s ease-in-out;
+    transition: 0.6s;
 }
 
 div:hover {
@@ -32,6 +32,7 @@ header nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 4px;
 }
 
 nav ul {
@@ -49,15 +50,26 @@ nav ul li {
 
 /* Main-Area Class Styling */
 .start {
-    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #eee;
     border-radius: 4px;
     text-align: center;
     padding: 8px;
-    background-image: image-set(url(src/assets/cyber2.jpeg));
+    background-color: color-mix(in hwb decreasing hue, rgb(226, 226, 222) 20%, rgb(210, 210, 233) 40%);
+}
+
+.mobile_img {
+    display: block;
+    size: 100%;
+    max-height: 200px;
+    max-width: 150%;
+    border-radius: 5%;
+    margin: 0px 10px 0px 10px;
 }
 
 .start >.in_image_text {
-    max-width: 50%;
+    min-width: fit-content;
     background-color: color-mix(in hwb decreasing hue, grey 20%, white 40%);
     border-radius: 6px;
     margin: 0px 190px 0px 200px;
@@ -71,8 +83,18 @@ nav ul li {
     display: block;
     background-color: #250791;
     border-color: #250791;
+    color: #f8f5f5;
     border-radius: 4px;
-    margin: 0px 250px 0px 270px;
+    margin: 0px 150px 0px 150px;
+}
+
+.start>.desktop_img {
+    display: block;
+    size: 100%;
+    max-height: 200px;
+    max-width: 150%;
+    border-radius: 5%;
+    margin: 0px 10px 0px 10px;
 }
 
 /* Link Styling */
@@ -87,9 +109,12 @@ a:hover {
 
 .find {
     display: flex;
-    max-width: max-content;
+    max-width: 100%;
     grid-template-columns: repeat(2);
     justify-content: space-between;
+    align-content: center;
+    border-radius: 5px;
+    background-color: color-mix(in hwb decreasing hue, grey 20%, white 40%);
 }
 
 #find {
@@ -97,7 +122,7 @@ a:hover {
     text-align: flex-start;
     flex-direction: column;
     max-width: 100%;
-    padding-left: 0px;
+    padding: 8px;
 }
 
 #find button {
@@ -110,10 +135,10 @@ a:hover {
 }
 
 .find img {
-    display: flex;
-    align-content: flex-end;
+    display: block;
     size: 100%;
     max-height: 200px;
+    max-width: 150%;
     border-radius: 5%;
     margin: 0px 10px 0px 10px;
 }
@@ -145,10 +170,25 @@ a:hover {
 }
 
 .services li:nth-child(3) {
-    max-width: 100%;
-    color: #f8f5f5;
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
     border-radius: 3%;
-    background-image: image-set(url(src/assets/cyber3.jpeg));
+    text-wrap: wrap;
+}
+
+.third_service {
+    display: flex;
+    flex-direction: column;
+}
+
+.services li img {
+    display: block;
+    size: 100%;
+    max-height: 200px;
+    max-width: 150%;
+    border-radius: 5%;
+    margin: 0px 10px 0px 10px;
 }
 
 .services li:hover {
@@ -176,8 +216,8 @@ a:hover {
     text-wrap: nowrap;
     max-width: max-content;
     background-color: color-mix(in xyz-d50, grey 50%, white 37%);
-    text-wrap: none;
-    padding-left: 8px;
+    margin-right: 40px;
+    
 }
 
 .testimonials li {
@@ -193,6 +233,7 @@ a:hover {
 
 .testimonials li:hover {
     transform: translateX(4px);
+    background-color: color-mix(in xyz, white 50%, red 12%);
 }
 
 .credits {
@@ -237,6 +278,11 @@ a:hover {
     overflow: auto;
 }
 
+.cards li:hover {
+    transform: translateX(4px);
+    background-color: color-mix(in xyz, white 50%, red 12%);
+}
+
 .cards button {
     display: block;
     background-color: #07c7c2;
@@ -277,10 +323,10 @@ a:hover {
 
 .query>.question-icon {
     font-size: 24px;
+    font: bold;
     position: absolute;
     right: 16px;
-    pointer-events: none;
-    transition: 400ms;
+    transition: 100ms;
 }
 
 .query>.question-icon.active {
@@ -303,8 +349,7 @@ a:hover {
     background-color: #0e0e0e;
     color: #eee;
     margin: 0;
-    max-height: 0px;
-    overflow: hidden;
+    padding: 2px;
     transition: 400ms;
 }
 
@@ -323,7 +368,9 @@ a:hover {
 .contact_us {
     display: flex;
     grid-template-columns: repeat(2);
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-right: 10px;
+    background-color: color-mix(in xyz, #f8f8f8 20%, grey 10%);
 }
 
 .contact_info {
@@ -383,6 +430,10 @@ footer >.meta {
     text-align: center;
     align-items: center;
     padding-left: 8px;
+    color: color-mix(in xyz-d65, grey 20%, black 40%);
+}
+
+footer >.meta li a {
     color: color-mix(in xyz-d65, grey 20%, black 40%);
 }
 
