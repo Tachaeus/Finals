@@ -445,9 +445,15 @@ footer img {
     margin: 0px 5px 0px 10px
 }
 
-@media (min-width: 650px){
-    body {
-        padding: 0px;
+@media (max-width: 600px) {
+    .body {
+        padding: 10px;
+        margin: 0;
+    }
+}
+@media (min-width: 600px){
+    .body {
+        padding: 10px;
         margin: 0 auto;
         margin: 0px;
     }
