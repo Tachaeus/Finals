@@ -35,7 +35,11 @@
       transform: rotate(360deg);
     }
   }
-  
+@media (max-width: 600px) {
+    margin: 100%;
+    padding: 10px;
+}
+
   @media (min-width: 650px) {
     #root {
       padding: 0px 10px;
