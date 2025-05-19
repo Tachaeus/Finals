@@ -1,5 +1,5 @@
 :root {
-  font-family: Arial, sans-serif;
+  font-family: 'karla', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   max-width: 100%;
@@ -30,17 +30,21 @@ button:focus-visible {
     height: 100vh;
     width: 100vw;
   }
+
+  .start> .dektop_img {
+    
+  }
 }
 
 @media (max-width: 320px) {
   html {
-    font-size: 80.5%;
+    font-size: 90.5%;
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 85%;
+    font-size: 95%;
   }
 }
 
@@ -69,10 +73,6 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 
@@ -87,5 +87,6 @@ button:focus-visible {
 @media (min-width: 992px) and (max-width: 1199px) {
   html {
     font-size: 16px;
+    color: #250971;
   }
 }
