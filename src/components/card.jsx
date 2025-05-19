@@ -23,13 +23,13 @@ function Card() {
             <main>
                 <section className="section">
                 <div className="start">
-                    <img className="mobile_img" src="https://i.ibb.co/9mX5PT0J/removed3.png"></img>
+                    <img className="desktop_img" src="https://i.ibb.co/Q3wbLN0G/removed2.png" />
                     <div className="in_image_text">
                         <p>Masterful Coding Solutions <br /> Optimizing Potential</p>
                         <p>Our work may not be the best you've ever seen,<br /> <span>but rest assured,</span><br /> it is what's just right for you!</p>
                         <a href=""><button>Take a Look</button></a>
                     </div>
-                    <img className="desktop_img" src="https://i.ibb.co/QjqqzR1m/removed6-2.png" />
+                    <img className="mobile_img" src="https://i.ibb.co/9mX5PT0J/removed3.png"></img>
                 </div><br /><br />
                 <div className="find">
                     <div id="find">
