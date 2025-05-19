@@ -35,8 +35,9 @@ button:focus-visible {
   .body {
     font-size: 100%;
   }
-  header nav h1 {
-    font-size: x-large;
+
+  h1 {
+    font-size: 28px;
   }
 }
 
