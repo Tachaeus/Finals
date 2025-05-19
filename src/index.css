@@ -31,8 +31,11 @@ button:focus-visible {
 }
 
 @media (max-width: 480px) {
-  html {
+  .body {
     font-size: 17px;
+  }
+  header nav h1 {
+    font-size: x-large;
   }
 }
 
