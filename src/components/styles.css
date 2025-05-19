@@ -267,7 +267,7 @@ a:hover {
 
 .credits img {
     display: block;
-    size: 28px 28px;
+    size: 28 28;
     max-height: fit-content;
     padding: 8px;
     margin-right: 8px;
@@ -469,10 +469,11 @@ footer img {
     margin: 0px 5px 0px 10px
 }
 
-@media (max-width: 600px) and (min-width: 1280px){
+@media (max-width: 480px) and (min-width: 1280px){
     .body {
         padding: 0px;
         margin: 0 auto;
+        font-sze: 16px;
     }
     
     .start,
