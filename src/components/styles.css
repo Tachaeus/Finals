@@ -264,7 +264,7 @@ a:hover {
 .credits {
     display: flex;
     flex-direction: row;
-    size: 28;
+    
 }
 
 .credits img {
