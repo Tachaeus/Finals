@@ -29,7 +29,7 @@ function Card() {
                         <p>Our work may not be the best you've ever seen,<br /> <span>but rest assured,</span><br /> it is what's just right for you!</p>
                         <a href=""><button>Take a Look</button></a>
                     </div>
-                    <img className="desktop_img" src="https://i.ibb.co/zV8096KR/none.png" />
+                    <img src="https://i.ibb.co/9mX5PT0J/removed3.png"></img>
                 </div><br /><br />
                 <div className="find">
                     <div id="find">
@@ -38,7 +38,7 @@ function Card() {
                         <p>Only a click of a button away.</p>
                         <button>Find Me One</button>
                     </div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0OKD6Br1ByuNytdSHg-dJWbBLgyhVtmEn8A&s" />
+                    <img src="https://i.ibb.co/gb6wY2P8/removed3-2.png" />
                 </div><br />
                 </section>
                 <section>
