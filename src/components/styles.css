@@ -475,6 +475,9 @@ footer img {
         padding: 0px;
         margin: 0 auto;
     }
+    .start img {
+        size: 80%;
+    }
 
     .start,
     .cards,
