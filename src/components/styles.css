@@ -67,6 +67,7 @@ nav ul li {
     border: 1px solid #eee;
     border-radius: 4px;
     text-align: center;
+    align-items: center;
     padding: 8px;
     background-color: color-mix(in hwb decreasing hue, rgb(226, 226, 222) 20%, rgb(210, 210, 233) 40%);
     width: 90%;
