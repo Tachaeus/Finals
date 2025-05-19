@@ -81,7 +81,6 @@ nav ul li {
     size: 100%;
     max-height: 80vh;
     max-width: 150%;
-    border-radius: 5%;
     margin: 0px 10px 0px 10px;
 }
 
@@ -116,11 +115,11 @@ nav ul li {
 
 .start>.desktop_img {
     display: block;
+    right: 0px;
     size: 100%;
     max-height: 200px;
     max-width: 100%;
     margin: 0px;
-    padding-right: 0px;
 }
 
 /* Link Styling */
