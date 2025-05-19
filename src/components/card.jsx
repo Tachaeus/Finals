@@ -23,7 +23,7 @@ function Card() {
             <main>
                 <section className="section">
                 <div className="start">
-                    <img className="desktop_img" src="https://i.ibb.co/zV8096KR/less.png" />
+                    <img className="mobile_img" src="https://i.ibb.co/zV8096KR/less.png" />
                     <div className="in_image_text">
                         <p>Masterful Coding Solutions <br /> Optimizing Potential</p>
                         <p>Our work may not be the best you've ever seen,<br /> <span>but rest assured,</span><br /> it is what's just right for you!</p>
