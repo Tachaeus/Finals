@@ -263,12 +263,11 @@ a:hover {
 .credits {
     display: flex;
     flex-direction: row;
-    
 }
 
 .credits img {
     display: block;
-    size: 20px 20px;
+    size: 28px 28px;
     max-height: fit-content;
     padding: 8px;
     margin-right: 8px;
