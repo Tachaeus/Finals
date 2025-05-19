@@ -1,6 +1,6 @@
 :root {
-  font-family: 'karla', sans-serif;
-  font-size: 17px;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
   line-height: 1.6;
   max-width: 100%;
   margin: 0 auto;
@@ -31,8 +31,9 @@ button:focus-visible {
 }
 
 @media (max-width: 480px) {
+  html,
   .body {
-    font-size: 17px;
+    font-size: 100%;
   }
   header nav h1 {
     font-size: x-large;
@@ -41,7 +42,7 @@ button:focus-visible {
 
 @media (max-width: 767px) {
   .body{
-    font-size: 17px;
+    font-size: 100%;
     padding: 0px;
     margin: 0;
   }
@@ -49,7 +50,7 @@ button:focus-visible {
 
 @media (max-width: 768px) {
   .body {
-    font-size: 17px;
+    font-size: 100%;
     width: 100%;
     color: #250971;
     padding: 10px;
@@ -65,7 +66,7 @@ button:focus-visible {
   html,
   body,
   #root {
-    font-size: 17px;
+    font-size: 100%;
     height: 100%;
     color: #250971;
     background-color: #f8f5f8;
@@ -83,15 +84,19 @@ button:focus-visible {
 }
 
 @media (min-width: 1300px) {
-  font-size: 17px;
+  .body {
+    font-size: 100%;
+  }
 }
 
 @media (min-width: 1600px) {
-  font-size: 17px;
+  .body {
+    font-size: 100%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  html {
+  .body {
     color: #250971;
   }
 }
