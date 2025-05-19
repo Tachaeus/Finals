@@ -1,6 +1,6 @@
 :root {
   font-family: 'karla', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.6;
   max-width: 100%;
   margin: 0 auto;
@@ -24,9 +24,29 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+@media (max-width: 320px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .body{
+    font-size: 17px;
+    padding: 0px;
+    margin: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .body {
-    font-size: 16px;
+    font-size: 17px;
     width: 100%;
     color: #250971;
     padding: 10px;
@@ -38,31 +58,11 @@ button:focus-visible {
   }
 }
 
-@media (max-width: 320px) {
-  html {
-    font-size: 95%;
-  }
-}
-
-@media (max-width: 480px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 767px) {
-   .body{
-     font-size: 16px;
-     padding: 0px;
-     margin: 0;
-  }
-}
-
 @media (min-width: 1280px) {
   html,
   body,
   #root {
-    font-size: 16px;
+    font-size: 17px;
     height: 100%;
     color: #250971;
     background-color: #f8f5f8;
@@ -80,16 +80,15 @@ button:focus-visible {
 }
 
 @media (min-width: 1300px) {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 @media (min-width: 1600px) {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   html {
-    font-size: 16px;
     color: #250971;
   }
 }
