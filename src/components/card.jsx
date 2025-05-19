@@ -23,13 +23,13 @@ function Card() {
             <main>
                 <section className="section">
                 <div className="start">
-                    <img className="mobile_img" src="https://i.ibb.co/c4X9JT1/none.png" />
+                    <img className="desktop_img" src="https://i.ibb.co/zV8096KR/less.png" />
                     <div className="in_image_text">
-                        <h3>Masterful Coding Solutions <br /> Optimizing Systems</h3>
-                        <p>View some of our work; it may be just the answer you've been searching for.</p>
+                        <p>Masterful Coding Solutions <br /> Optimizing Potential</p>
+                        <p>Our work may not be the best you've ever seen,<br /> <span>but rest assured,</span><br /> it is what's just right for you!</p>
                         <a href=""><button>Take a Look</button></a>
                     </div>
-                    <img className="desktop_img" src="https://i.ibb.co/zV8096KR/less.png" />
+                    <img className="desktop_img" src="https://i.ibb.co/zV8096KR/none.png" />
                 </div><br /><br />
                 <div className="find">
                     <div id="find">
@@ -97,7 +97,7 @@ function Card() {
                         <a href="https://stackoverflow.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAA7ElEQVR4AWJwLwC0WwcaCENhFMefoV6hABgEBhDAxN7jAggRPcSeoAcYQFgIInuSIcAlwLqHM45klvtt0PCXO7Pfvu3Gskn7c3AG/WldhNIpwRaNDQJadb9EH9agYiWQ13G55doRPYwFLkKNIpiQ68QcZIqUXHuszUBMo1PJLm2JJ/qoo0FcSKZCBdGc62asd5h8wkRTKxCIkwsvZPMU+h7tQP4VNB5zehNR4LWq6tD+y+N0xHyH8/wzigFbXEA2TColiMed3ODTBMQUPXlzEJP0ZQnWl9t9MyQr8KdiwTy0C2WD4rnzN80MmvcG9xb1UQNO3ZEAAAAASUVORK5CYII=" /></a>
                         <a href="https://syncfusion.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACFElEQVR4Ae2WA4xdURRFv+3fb6u2bdu23bC2bcZoUNtuXFtRx7Y950zGONHc8CVZnztvr+SSJ+DzmLNmgLpb2knXh+ldlF1q/ce+vINb4ow65PyXc9ZdAsSfnmYYIxYKBKwFKso1kQedb7G8GlnnZhjWMRdQSvnS37vsl2uVV1D4dZvtuNcokvMCrRc/JLin0gY8BkvnMVTOFZy0r3q5SCjg315h2o1FWNgAxd+2267xWnXdWkJQoDW2am129l9N5YJtlj2rXn5juWkuFBRVlFESjS7g0otkYQcc16jiCv7ssj9udAHErBaqv+8oG/9iQuBXe5fEyUQAUcmEogdrzFugKK92edYZd9yS3qqWmGMmgOB6PzhBPy/7rDu9ojzjtDsDNqZR+D9zgQqOTtYPhPJIoAgm6Ar8jY0AQe+gtMW1paY1KilfWEPA5hm2iWCDTGk1qXWhTlSuib3XDKKchAcbTZBCJFZJJDKDlsoo1C4HPmxYS7kDCDZEB5dEi7naQ5BBkAJD0BKGYCmVgyG4ixMOxvg+kNEQV5eaFmIpkzlQLvCC2nhAYFkdAU6AE+AEYKOxUuCpJhBKFFRGKFIY8GFWjdAAWBtCpxAo6gj4WszdRLBBqfGZ9KYOnaicwz92Bt6E4PNMKmdxDujAdAjg8wsq5w5NrXcOcAKcACfwieA9CARAYBqVA4EL5QKXqBwITKotUAr2NQhGsplDBAAAAABJRU5ErkJggg==" /></a>
                     </div><br />
-                    <div class="explore">
+                    <div className="explore">
                         <h3>View Some of <br />Our Resources</h3>
                         <p>Complementary sneak peek at how one goes from <br />writing simple scripts to producing iconic code.</p>
                     </div>
@@ -132,7 +132,9 @@ function Card() {
                         {
                         questions.map((things, e) => (
                             <div key={things.id} className="query">
-                                <div className="question-icon" onClick={() => setActive(e === active ? undefined : e)}>{e === active ? "×" : "+"}</div>
+                                <div className="question-icon" onClick={() => setActive(e === active ? undefined : e)}>
+                                    {e === active ? "×" : "+"}
+                                </div>
                                 <div className="question">{things.question}</div>
                                 {
                                 e === active && <p className="answer">{things.answer}</p>

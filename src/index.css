@@ -1,5 +1,6 @@
 :root {
   font-family: Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.6;
   max-width: 100%;
   margin: 0 auto;
@@ -19,28 +20,50 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (max-width: 600px) {
-  .container {
+@media (max-width: 768px) {
+  .body {
     width: 100%;
     padding: 10px;
   }
+
+  #root {
+    height: 100vh;
+    width: 100vw;
+  }
 }
 
-@media (min-width: 600px) {
-  html, body, #root {
+@media (max-width: 320px) {
+  html {
+    font-size: 60.5%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media (max-width: 767px) {
+   .body{
+    padding: 0px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  html,
+  body,
+  #root {
     height: 100%;
     color: #250971;
     background-color: #f8f5f8;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
 
-  body a {
+  .body a {
     color: #250971;
-  }
-
-  footer >.meta li {
-    color: color-mix(in xyz-d65, grey 20%, black 40%);
   }
 
   a:hover {
@@ -49,5 +72,20 @@ button:focus-visible {
 
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+@media (min-width: 1300px) {
+
+}
+
+@media (min-width: 1600px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 14px;
   }
 }
