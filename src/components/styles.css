@@ -120,6 +120,7 @@ nav ul li {
     max-height: 200px;
     max-width: 100%;
     margin: 0px;
+    padding-right: 0px;
 }
 
 /* Link Styling */
