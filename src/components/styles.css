@@ -6,7 +6,7 @@
     font-size: 16px;
     line-height: 1.6;
     margin: 0 auto;
-    color: #220491;
+    color: #250971;
     padding: 0px 10px;
     background-color: #f8f5f5;
     overflow-x: hidden;
@@ -79,7 +79,6 @@ nav ul li {
 .mobile_img {
     display: block;
     size: 100%;
-    padding-top: 0px;
     max-height: 200%;
     max-width: 150%;
     border-radius: 5%;
@@ -477,10 +476,7 @@ footer img {
         padding: 0px;
         margin: 0 auto;
     }
-    .start img {
-        size: 100%;
-    }
-
+    
     .start,
     .cards,
     .credits,
