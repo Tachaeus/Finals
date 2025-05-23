@@ -642,7 +642,7 @@ footer >.meta li a {
     .desktop_img {
         display: block;
         max-width: 40%;
-        height: auto; /* Maintain aspect ratio */
+        height: 80%; /* Maintain aspect ratio */
     }
     .mobile_img {
         display: none;
