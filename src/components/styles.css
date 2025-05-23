@@ -641,7 +641,7 @@ footer >.meta li a {
     }
     .desktop_img {
         display: block;
-        max-width: 100%;
+        max-width: 40%;
         height: auto; /* Maintain aspect ratio */
     }
     .mobile_img {
@@ -664,7 +664,7 @@ footer >.meta li a {
     }
     .desktop_img {
         display: block;
-        max-width: 100%;
+        max-width: 40%;
         height: auto; /* Maintain aspect ratio */
     }
     .mobile_img {
