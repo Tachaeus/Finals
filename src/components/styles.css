@@ -585,7 +585,7 @@ footer >.meta li a {
     width: 100%;
     margin: 0;
     padding: 4px;
-    font-size: 12px;
+    font-size: 14px;
     overflow-x: hidden;
   }
   h1 {
@@ -644,7 +644,7 @@ footer >.meta li a {
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Tablets */
   .body {
-    font-size: 14px;
+    font-size: 16px;
   }
   .start {
     flex-direction: row;
