@@ -609,6 +609,9 @@ footer >.meta li a {
     flex-direction: column;
     height: 80vh;
   }
+ .start>.in_image_text {
+    height: 100%;
+}
   .desktop_img {
     display: none;
   }
@@ -671,6 +674,10 @@ footer >.meta li a {
     flex-direction: column;
     height: 80vh;
   }
+.start>.in_image_text {
+    height: 100%;
+}
+    
   .desktop_img {
     display: none;
   }
