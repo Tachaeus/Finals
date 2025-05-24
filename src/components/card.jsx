@@ -172,18 +172,18 @@ function Card() {
                             <p>Around the clock, any queries, complements, complaints, consultations, are welcome.</p>
                         </div><br />
                         <div className="contact">
-                            <div className="contact_info">
+                            <span className="contact_info">
                                 <h3>Contact Info</h3>
-                                <p>Email: tachweb@gmail.com</p>
+                                <p>Email: techweb@gmail.com</p>
                                 <p>Phone: +254 (765) 432-100</p>
                                 <p>Address: 767 Pahali Street, Place Town, KE</p>
-                            </div>
-                            <div className="message">
+                            </span>
+                            <span className="message">
                                 <h3>Contact Us</h3>
                                 <label for="email">Write To Us:</label><br /><br />
                                 <input type="text" className="email" id="email" placeholder="Write an email" /><br /><br />
                                 <a href="mailto:tachincursion@gmail.com"><button>Send</button></a>
-                            </div>
+                            </span>
                         </div>
                         <p>You can expect a response within a day.</p>
                     </div>

@@ -3,6 +3,10 @@
     flex-direction: column;
     border: 1px solid #f8f5f8;
     border-radius: 5px;
+<<<<<<< HEAD
+=======
+    font-size: 16px;
+>>>>>>> 5a9c3df (Final_Project)
     line-height: 1.6;
     margin: 0 auto;
     padding: 10px;
@@ -27,7 +31,16 @@
     margin: 0;
 }
 
+.logo {
+    font-size: xx-large;
+    margin: 3%;
+    padding-right: 5%;
+}
+
 h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 32px;
     font-weight: bolder;
     margin-left: 20px;
@@ -55,6 +68,42 @@ header nav {
     justify-content: center;
 }
 
+
+.menu {
+    width: 80%;
+    height: 100%;
+}
+
+.menuBtn {
+    background-color: #250971;
+    border: 1px solid #250971;
+    color: #f8f5f8;
+}
+
+.dropDown {
+    display: none;
+    position: absolute;
+    border-radius: 3%;
+    margin-top: 1px;
+    max-width: 100px;
+    max-height: 100px;
+    float: left;
+    background-color: #250971;
+}
+
+.dropDown a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 4px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.menu:hover > .dropDown {
+    display: block;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -72,8 +121,6 @@ nav ul:nth-child(2) {
 
 nav ul li {
     list-style: none;
-    justify-items: flex-start;
-    justify-content: space-around;
     padding-right: 12px;
     padding-left: 12px;
 }
@@ -95,8 +142,13 @@ nav ul li {
 .desktop_img {
     display: block;
     size: 100%;
+<<<<<<< HEAD
     max-height: 80%;
     max-width: 40%;
+=======
+    max-height: 75%;
+    max-width: 50%;
+>>>>>>> 5a9c3df (Final_Project)
     margin: 0px;
 }
 
@@ -105,7 +157,7 @@ nav ul li {
     background-color: color-mix(in hwb decreasing hue, grey 20%, white 40%);
     border-radius: 6px;
     padding: 8px;
-    font-size: x-large;
+    font-size: large;
     align-content: center;
     font-weight: bold;
 }
@@ -149,6 +201,7 @@ a:hover {
 .find {
     display: flex;
     padding: 8px;
+    padding-right: 0px;
     width: 97%;
     grid-template-columns: repeat(2);
     justify-content: space-between;
@@ -180,7 +233,7 @@ a:hover {
     max-height: 60%;
     max-width: 40%;
     border-radius: 5%;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 10px;
 }
 
 .services {
@@ -237,15 +290,21 @@ a:hover {
 
 .services li img {
     display: block;
+<<<<<<< HEAD
     size: 100%;
     max-height: 60%;
     max-width: 40%;
+=======
+    size: 80%;
+    max-height: 80%;
+    max-width: 50%;
+>>>>>>> 5a9c3df (Final_Project)
     border-radius: 5%;
     margin: 0px 8px;
 }
 
 .services li:hover {
-    transform: scale(1, 1.2);
+    transform: scaleY(1.05);
     background-color: color-mix(in lch decreasing hue, #eeeeee11 88%, rgb(179, 178, 180) 14%);
 }
 
@@ -298,12 +357,12 @@ a:hover {
 .credits {
     display: flex;
     flex-direction: row;
-    align-content: center;
+    justify-items: center;
     color: color-mix(in hwb decreasing hue,grey 20%, #0e0e0e 60%);
     font-weight: bold;
     font-style: oblique;
     justify-content: space-between;
-    width: 98%;
+    width: 97%;
     padding: 8px;
     border-radius: 10px;
     background-color: color-mix(in hwb decreasing hue,grey 20%, white 60%);
@@ -343,6 +402,7 @@ a:hover {
     background-color: color-mix(in xyz-d50, grey 50%, white 37%);
     padding: 8px;
     margin-right: 4px;
+    margin-bottom: 4px;
     counter-increment: calc(+2);
     border-radius: 5%;
     list-style: none;
@@ -507,7 +567,7 @@ div h3 {
     text-align: left;
     height: 30px;
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .message button {
@@ -677,12 +737,26 @@ footer >.meta li a {
         width: 100%;
     }
   h1 {
+<<<<<<< HEAD
     font-size: 20px;
     margin: 0;
+=======
+    font-size: 28px;
+  }
+  nav {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  nav ul:nth-child(1) {
+    display: none;
+  }
+  nav ul {
+    justify-content: space-between;
+>>>>>>> 5a9c3df (Final_Project)
   }
   .start {
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
   }
     .start>.in_image_text {
     height: 100%;
@@ -705,8 +779,32 @@ footer >.meta li a {
   }
   .find_img {
     size: 80%;
+<<<<<<< HEAD
     max-height: 60px;
     max-width: 40%;
+=======
+    max-height: 100px;
+    max-width: 100%;
+>>>>>>> 5a9c3df (Final_Project)
+  }
+  .credits span>p {
+    display: none;
+  }
+  .cards ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cards li {
+    width: 44%;
+  }
+  .FAQs {
+    display: flex;
+    flex-direction: column;
+  }
+  .FAQs_in,
+  .FAQs_out {
+    width: 90%;
   }
   .FAQs_out_img_area img {
     width: 80%;
@@ -715,24 +813,82 @@ footer >.meta li a {
   .question-icon {
     display: none;
   }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_info,
+  .message {
+    width: 80%;
+  }
   header li a,
   footer li a {
     color: #250791;
-  }
-  .region_one_links>.view {
-    display: none;
   }
   .region_one img {
     size: 50%;
     width: 45%;
   }
+  footer>.meta ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer>.meta li {
+    width: 50%;
+  }
 }
 
-@media (min-width: 1025px) {
-  /* Desktops */
+<<<<<<< HEAD
+=======
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Tablets */
+  .menu {
+    display: none;
+  }
+  .body {
+    font-size: 14px;
+  }
   .start {
     flex-direction: row;
-    height: 80vh;
+    height: 90vh;
+  }
+  .desktop_img {
+    display: block;
+    max-width: 40%;
+  }
+  .mobile_img {
+    display: none;
+  }
+  .credits span>p {
+    display: none;
+  }
+    .question-icon {
+    display: none;
+  }
+  header li a,
+  footer li a {
+    color: #250791;
+  }
+}
+
+>>>>>>> 5a9c3df (Final_Project)
+@media (min-width: 1025px) {
+  /* Desktops */
+  header .menu {
+    display: none;
+  }
+  .start {
+    flex-direction: row;
+    height: 90vh;
+  }
+  .services li img {
+    display: block;
+    size: 80%;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 5%;
+    margin: 0px 8px;
   }
   header li a,
   footer li a {
