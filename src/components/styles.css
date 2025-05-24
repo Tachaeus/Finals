@@ -68,6 +68,7 @@ header nav {
 .menu {
     width: 80%;
     height: 100%;
+    margin-left: 2px;
 }
 
 .menuBtn {
@@ -699,6 +700,12 @@ footer >.meta li a {
   footer li a {
     color: #250791;
   }
+.region_one>.view {
+    display: none;
+}
+.region_one>.socials {
+    margin-right: 2px;
+}
   .region_one img {
     size: 50%;
     width: 45%;
