@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import './components/styles.css'
 import Card from './components/card.jsx'
+import './components/styles.css'
 import './App.css'
 
 function App() {
 
   return (
+    <section className="section_prime">
     <div className="body">
       <header>
         <nav>
@@ -14,7 +15,16 @@ function App() {
                 <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
             </ul>
-            <h1>Scriptor</h1>
+            <span className="menu">
+              <button className="menuBtn">≣</button>
+              <div className="dropDown">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+              </div>
+            </span>
+            
+            <h1><i className="logo">♠</i>Scriptor</h1>
             <ul>
                 <li><a href="">Scriptors</a></li>
                 <li><a href="">Resources</a></li>
@@ -24,8 +34,9 @@ function App() {
       </header>
       <Card />
       <footer>
-        <h1>Scriptor</h1>
         <div className="region_one">
+          <span className="region_one_links">
+          <h1>Scriptor</h1>
           <ul className="view">
             <li><a href="">About</a></li>
             <li><a href="">Services</a></li>
@@ -35,19 +46,21 @@ function App() {
           </ul>
           <ul className="socials">
             <li><a href="">WhatsApp</a></li>
-            <li><a href="">GitHub</a></li>
             <li><a href="">StackOverflow</a></li>
+            <li><a href="">Medium</a></li>
             <li><a href="">LinkedIn</a></li>
           </ul>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjQDyrP0wXXKuVSiLUA3lXcOscW4A-e6JTQ&s" alt="" /><br />
+          </span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjQDyrP0wXXKuVSiLUA3lXcOscW4A-e6JTQ&s" /><br />
         </div><br />
         <ul className="meta">
           <li><a href="">Terms Of Service</a></li>
           <li><a href="">Privacy Policy</a></li>
-          <p>&copy; {new Date().getFullYear()} Scriptor All Rights Reserved</p>
+          <li><p>&copy; Scriptor {new Date().getFullYear()}. All Rights Reserved</p></li>
         </ul>
       </footer>
     </div>
+    </section>
   )
 }
 
