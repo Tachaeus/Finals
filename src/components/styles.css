@@ -748,11 +748,8 @@ footer >.meta li a {
   }
   .region_one_links {
     size: 80%;
-    width: 59%;
+    width: 56%;
   }
-    .region_one_links ul:nth-child(1) {
-        display: none;
-    }
   .region_one_links ul {
     padding-left: 1px;
   }
