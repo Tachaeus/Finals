@@ -1,6 +1,23 @@
 import { useState } from 'react';
 
 function Card() {
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    const addEmail = (e) => {
+    setEmail(e.target.value);
+    }
+    const addMessage = (m) => {
+    setMessage(m.target.value);
+    }
+    const sendMessage = () => {
+        if (email.trim() === "" && message.trim() === "") {
+            return;
+        }
+        setEmail("");
+        setMessage("");
+    }
+
     const [active, setActive] = useState();
 
     const questions = [
@@ -153,22 +170,24 @@ function Card() {
                     <span className="FAQs_in">
                         {
                         questions.map((things, e) => (
-                            <div key={things.id} className="query" onClick={() => setActive(e === active ? undefined : e)}>
-                                <div className="question-icon">
+                            <span key={things.id} className="query" onClick={() => setActive(e === active ? undefined : e)}>
+                                
+                                <div className="question">{things.question}
+                                <span className="question-icon">
                                     {e === active ? "×" : "+"}
+                                </span>
                                 </div>
-                                <div className="question">{things.question}</div>
                                 {
                                 e === active && <p className="answer">{things.answer}</p>
                                 }
-                            </div>
+                            </span>
                         ))
                         }
                     </span>
                     </div><br />
                     <div className="CTA_two">
                         <div id="talk">
-                            <h3>Be An Innovator</h3>
+                            <h3>Safe And Efficient | For You</h3>
                             <p>Around the clock, any queries, complements, complaints, consultations, are welcome.</p>
                         </div><br />
                         <div className="contact">
@@ -180,9 +199,11 @@ function Card() {
                             </span>
                             <span className="message">
                                 <h3>Contact Us</h3>
+                                <label for="email">Email:</label><br /><br />
+                                <input type="email" className="email" id="email" value={email} onChange={addEmail} placeholder="example@email.com" /><br /><br />
                                 <label for="email">Write To Us:</label><br /><br />
-                                <input type="text" className="email" id="email" placeholder="Write an email" /><br /><br />
-                                <a href="mailto:tachincursion@gmail.com"><button>Send</button></a>
+                                <input type="text" className="email" id="email" value={message} onChange={addMessage} placeholder="Write a message" /><br /><br />
+                                <button onClick={sendMessage}>Send</button>
                             </span>
                         </div>
                         <p>You can expect a response within a day.</p>

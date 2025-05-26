@@ -22,9 +22,15 @@
       color: color-mix(in xyz-d65, grey 20%, black 40%);
   }
   
-  a img:hover{
-    animation: logo-spin infinite 10s linear;
+  a img {
+    transition: 0.2s;
+    transition: 3px 2s ease;
   }
+
+  a img:hover {
+    transform: scale(1.1);
+  }
+  
   
   @keyframes logo-spin {
     from {

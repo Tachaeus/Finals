@@ -39,7 +39,6 @@ h1 {
     align-items: center;
     font-size: 32px;
     font-weight: bolder;
-    margin-left: 20px;
     transition: 0.6s;
 }
 
@@ -59,33 +58,47 @@ h1 {
 header nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 4px;
     justify-content: center;
+    align-items: center;
 }
 
-
 .menu {
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f8f5f8;
+    padding: 2px;
+    margin: 2px;
+    width: 30%;
     height: 100%;
-    margin-left: 2px;
 }
 
 .menuBtn {
+    display: block;
     background-color: #250971;
-    border: 1px solid #250971;
-    color: #f8f5f8;
+    border: 1px solid transparent;
+    color: #eee;
+    font-size: x-large;
+    border-radius: 10%;
+    padding: 0;
+    margin: 0px 0px 0px 2px;
 }
 
 .dropDown {
-    display: none;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     border-radius: 3%;
-    margin-top: 1px;
-    max-width: 100px;
-    max-height: 100px;
-    float: left;
+    margin-top: 31px;
+    max-width: 100%;
+    max-height: 100%;
     background-color: #250971;
+}
+
+.dropDown li{
+    list-style: none;
+    transition: 0.2s;
+    transition: 3px 2
 }
 
 .dropDown a{
@@ -95,10 +108,12 @@ header nav {
     padding: 4px;
     align-items: flex-start;
     justify-content: center;
+    color: #eee;
 }
 
-.menu:hover > .dropDown {
-    display: block;
+.dropDown li a:hover {
+    color: #747bff;
+    transform: scaleY(1.05);
 }
 
 nav ul {
@@ -290,7 +305,7 @@ a:hover {
 }
 
 .services li:hover {
-    transform: scaleY(1.05);
+    transform: scale(1.05);
     background-color: color-mix(in lch decreasing hue, #eeeeee11 88%, rgb(179, 178, 180) 14%);
 }
 
@@ -343,7 +358,7 @@ a:hover {
 .credits {
     display: flex;
     flex-direction: row;
-    justify-items: center;
+    align-items: center;
     color: color-mix(in hwb decreasing hue,grey 20%, #0e0e0e 60%);
     font-weight: bold;
     font-style: oblique;
@@ -466,7 +481,6 @@ div h3 {
 }
 
 .query {
-    margin: 8px;
     border: 1px solid color-mix(in hwb decreasing hue, grey 20%, white 40%);
     border-radius: 5%;
     position: relative;
@@ -476,14 +490,17 @@ div h3 {
     font-size: 24px;
     font: bold;
     position: absolute;
-    right: 16px;
     padding-right: 2px;
     transition: 100ms;
 }
 
 .query>.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: color-mix(in hwb decreasing hue, grey 20%, white 40%);
     padding: 8px;
+    margin-bottom: -8px;
     cursor: pointer;
     border-bottom: 1px solid color-mix(in xyz, #eee 36%, #333 92%);
 }
@@ -494,9 +511,10 @@ div h3 {
 }
 
 .query>.answer {
-    background-color: #0e0e0e;
+    background-color: rgba(4, 33, 128, 0.863);
+    font-weight: bold;
     color: #eee;
-    margin: 0;
+    margin-bottom: -16px;
     padding: 2px;
     transition: 400ms;
 }
@@ -574,7 +592,7 @@ footer {
 footer  >.region_one {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
     width: 100%;
     height: 200px;
@@ -583,15 +601,28 @@ footer  >.region_one {
 .region_one_links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 50%;
 }
 
-.region_one img {
-    width: 40%;
+.footer_img_area {
+    color:hsl(from #ebdddd h s l);
+    width: 30%;
     height: 100%;
+    border: 1px solid transparent;
     border-radius: 5%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJjQDyrP0wXXKuVSiLUA3lXcOscW4A-e6JTQ&s);
 }
+
+.footer_img_area h3 {
+    padding: 8px;
+    margin: 8px;
+}
+
+.footer_img_area button {
+    margin: 4px 16px;
+}
+
 
 footer ul {
     display: flex;
@@ -634,22 +665,29 @@ footer >.meta li a {
     font-size: 12px;
     overflow-x: hidden;
   }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
   h1 {
     font-size: 28px;
+    padding: 0;
+    margin-left: 0;
+  }
+  nav h1 {
+    justify-self: center;
   }
   nav {
     align-items: center;
-    justify-content: space-evenly;
-  }
-  nav ul:nth-child(1) {
-    display: none;
   }
   nav ul {
-    justify-content: space-between;
+    display: none;
   }
   .start {
     flex-direction: column;
-    height: 90vh;
+    height: 80vh;
+    background-image: image-set(url(../assets/start_background.jpeg));
   }
   .desktop_img {
     display: none;
@@ -662,16 +700,24 @@ footer >.meta li a {
     max-height: 100px;
     max-width: 100%;
   }
+  .services ul>.pair {
+    display: flex;
+    flex-direction: column;
+  }
+  .services ul>.pair li {
+    width: 91%;
+    height: 170px;
+  }
   .credits span>p {
     display: none;
   }
   .cards ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .cards li {
-    width: 44%;
+    width: 95%;
+    height: 150px;
   }
   .FAQs {
     display: flex;
@@ -700,15 +746,17 @@ footer >.meta li a {
   footer li a {
     color: #250791;
   }
-.region_one>.view {
-    display: none;
-}
-.region_one>.socials {
-    margin-right: 2px;
-}
-  .region_one img {
-    size: 50%;
-    width: 45%;
+  .region_one_links {
+    size: 80%;
+    width: 59%;
+  }
+  .region_one_links ul {
+    padding-left: 1px;
+  }
+  .footer_img_area {
+    size: 40%;
+    width: 40%;
+    height: 100%;
   }
   footer>.meta ul {
     display: flex;
@@ -730,7 +778,7 @@ footer >.meta li a {
   }
   .start {
     flex-direction: row;
-    height: 90vh;
+    height: 80vh;
   }
   .desktop_img {
     display: block;
