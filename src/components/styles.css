@@ -747,6 +747,7 @@ footer >.meta li a {
     color: #250791;
   }
   .region_one_links {
+      justify-content: space-evenly;
     size: 80%;
     width: 59%;
   }
