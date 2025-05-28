@@ -39,11 +39,11 @@ function Card() {
         },
         {
             question: "How many people can use my account at a time?",
-            answer: "The maximum number of users allowed per account is twenty(five admins and fifteen workers)?"
+            answer: "The maximum number of users allowed per account is twenty(five admins and fifteen workers."
         },
         {
             question: "Do you offer database access privilages as well as hosting services?",
-            answer: "We do not provide database facilities, however, you shall have full access to any official offsite server you have access privilages to?"
+            answer: "We do not provide database facilities, however, you shall have full access to any official offsite server you have access privilages to."
         }
     ];
 
@@ -52,13 +52,13 @@ function Card() {
             <main>
                 <section className="section_one">
                 <div className="start">
-                    <img className="desktop_img" src="https://i.ibb.co/Q3wbLN0G/removed2.png" />
+                    <img className="desktop_img" src="https://www.shakebugs.com/wp-content/uploads/2022/05/What-is-collaborative-coding.png" />
                     <div className="in_image_text">
                         <p>Masterful Coding Solutions <br /> Optimizing Potential</p>
                         <p>Our work may not be the best you've ever seen,<br /> <span>but rest assured,</span><br /> it is what's just right for you!</p>
                         <a href=""><button>Take a Look</button></a>
                     </div>
-                    <img className="mobile_img" src="https://i.ibb.co/fV4fbrnv/removed3.png" />
+                    <img className="mobile_img" src="https://i.ibb.co/zTPp2fcv/removed-3.png" />
                 </div><br /><br />
                 <div className="find">
                     <div id="find">
@@ -67,7 +67,7 @@ function Card() {
                         <p>Only a click of a button away.</p>
                         <button>Find Me One</button>
                     </div>
-                    <img className="find_img" src="https://i.ibb.co/gb6wY2P8/removed3-2.png" />
+                    <img className="find_img" src="https://i.ibb.co/qMC15G57/removed-5.png" />
                 </div><br />
                 </section>
                 <section className="section_two">
@@ -95,7 +95,7 @@ function Card() {
                             <p>Agreement-based leasing of commercial services complete with work flexibility and disgression per demand.</p>
                             <button>Continue</button>
                         </span>
-                        <img src="https://i.ibb.co/sJKLK57F/removed1.png" />
+                        <img src="https://i.ibb.co/ccHwLNTv/removed-2.png" />
                     </li>
                     </ul>
                     </div>
@@ -123,18 +123,18 @@ function Card() {
                     <section className="section_three">
                     <div className="credits">
                         <p>Partnered with:</p>
-                        <span><a href="https://github.com"><img src="https://img.icons8.com/?size=32&id=16318&format=png" /></a><p>GitHub</p></span>
-                        <span><a href="https://react.com"><img src="https://img.icons8.com/?size=30&id=122637&format=png" /></a><p>React</p></span>
-                        <span><a href="https://medium.com"><img src="https://img.icons8.com/?size=24&id=vfZqSNdtM6Ur&format=png" /></a><p>Medium</p></span>
-                        <span><a href="https://stackoverflow.com"><img src="https://img.icons8.com/?size=24&id=dtYaGsSmXwVm&format=png" /></a><p>StackOverflow</p></span>
-                        <span><a href="https://syncfusion.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABW0lEQVQ4jWMW4WFi4GJjJBrvLRRfKSPIzHv12e8LXGyMDMxcbIwMxIIWf4FqD23OHBsVDn9hbqY/+27+OMwirFZwC67i/7+Pv97ua2ATcemHCX39eH/3j5cbs7MdeBPjLXmaYeIwNgsLC5cKkiVv3vziEpNAFdvNwMDAIMnPLIXsmv8MDD+7D3BtZyLW+TUbP7R27PiY/J+B4ScDAwND546PWR8/PjvHQqwBDAwMDFMPfJ6/6JL8q3LbJwZTD3yez8DAwMCoKKfnjazo88eHp3n55U1hfKa/755//PL5CYpJfz+/gjFZuCT8NiNJvfn0a085l4TLXJjAx7dXp2+OOS6iL8vmBxPT7pIP+fzuylYGBgYGor3AyMDAjk2c6EDEBSg2gKhAZGBgYPjHLCSJrAYWkEQFIgMDAwO/sHYmQtkmX1ggDnwYsDAwMLyBcf78+fYBynyDRS02MQYAsAyDuQyF0HsAAAAASUVORK5CYII=" /></a><p>SyncFusion</p></span>
+                        <span><a href="https://github.com"><img src="https://img.icons8.com/?size=32&id=16318&format=png" /></a></span>
+                        <span><a href="https://react.com"><img src="https://img.icons8.com/?size=30&id=122637&format=png" /></a></span>
+                        <span><a href="https://medium.com"><img src="https://img.icons8.com/?size=24&id=vfZqSNdtM6Ur&format=png" /></a></span>
+                        <span><a href="https://stackoverflow.com"><img src="https://img.icons8.com/?size=24&id=dtYaGsSmXwVm&format=png" /></a></span>
+                        <span><a href="https://syncfusion.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABW0lEQVQ4jWMW4WFi4GJjJBrvLRRfKSPIzHv12e8LXGyMDMxcbIwMxIIWf4FqD23OHBsVDn9hbqY/+27+OMwirFZwC67i/7+Pv97ua2ATcemHCX39eH/3j5cbs7MdeBPjLXmaYeIwNgsLC5cKkiVv3vziEpNAFdvNwMDAIMnPLIXsmv8MDD+7D3BtZyLW+TUbP7R27PiY/J+B4ScDAwND546PWR8/PjvHQqwBDAwMDFMPfJ6/6JL8q3LbJwZTD3yez8DAwMCoKKfnjazo88eHp3n55U1hfKa/755//PL5CYpJfz+/gjFZuCT8NiNJvfn0a085l4TLXJjAx7dXp2+OOS6iL8vmBxPT7pIP+fzuylYGBgYGor3AyMDAjk2c6EDEBSg2gKhAZGBgYPjHLCSJrAYWkEQFIgMDAwO/sHYmQtkmX1ggDnwYsDAwMLyBcf78+fYBynyDRS02MQYAsAyDuQyF0HsAAAAASUVORK5CYII=" /></a></span>
                     </div><br />
                     <div className="explore">
                         <h3>View Some of <br />Our Resources</h3>
                         <p>Complementary sneak peek at how one goes from <br />writing simple scripts to producing iconic code.</p>
                     </div>
                     <div className="cards">
-                        <ul>
+                        <ul>    
                             <li>
                                 <h3>Coding Practices</h3>
                                 <p>Hands-on challenges and tutorials with view to sharpening creative problem-solving.</p>
