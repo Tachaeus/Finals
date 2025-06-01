@@ -43,8 +43,8 @@ function App() {
       <Card />
       <footer>
         <div className="region_one">
-          <span className="region_one_links">
           <h1>Scriptor</h1>
+          <span className="region_one_links">
           <ul className="view">
             <li><a href="">About</a></li>
             <li><a href="">Services</a></li>
@@ -53,6 +53,7 @@ function App() {
             <li><a href="">Contact</a></li>
           </ul>
           <ul className="socials">
+            <li><a href="">Github</a></li>
             <li><a href="">WhatsApp</a></li>
             <li><a href="">StackOverflow</a></li>
             <li><a href="">Medium</a></li>

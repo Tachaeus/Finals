@@ -39,7 +39,7 @@ function Card() {
         },
         {
             question: "How many people can use my account at a time?",
-            answer: "The maximum number of users allowed per account is twenty(five admins and fifteen workers."
+            answer: "The maximum number of users allowed per account is twenty-five admins and fifteen workers."
         },
         {
             question: "Do you offer database access privilages as well as hosting services?",
@@ -51,7 +51,7 @@ function Card() {
         <div className="main_area">
             <main>
                 <section className="section_one">
-                <div className="start">
+                <span className="start">
                     <img className="desktop_img" src="https://www.shakebugs.com/wp-content/uploads/2022/05/What-is-collaborative-coding.png" />
                     <div className="in_image_text">
                         <p>Masterful Coding Solutions <br /> Optimizing Potential</p>
@@ -59,7 +59,7 @@ function Card() {
                         <a href=""><button>Take a Look</button></a>
                     </div>
                     <img className="mobile_img" src="https://i.ibb.co/zTPp2fcv/removed-3.png" />
-                </div><br /><br />
+                </span><br /><br />
                 <div className="find">
                     <div id="find">
                         <p>There's not much to it.</p>

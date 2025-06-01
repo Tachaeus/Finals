@@ -14,11 +14,11 @@
     width: 100%;
 }
 
-.body div {
+.main_area div {
     transition: 0.6s;
 }
 
-.body div:hover {
+.main_area div:hover {
     transform: translateY(3px);
 }
 
@@ -154,8 +154,8 @@ nav ul li {
 .desktop_img {
     display: block;
     size: 100%;
-    max-height: 75%;
-    max-width: 37%;
+    max-height: 70%;
+    max-width: 35%;
     margin: 0px;
 }
 
@@ -491,7 +491,7 @@ div h3 {
 }
 
 .query>.question-icon {
-    font-size: 24px;
+    font-size: large;
     font: bold;
     position: absolute;
     padding-right: 2px;
@@ -595,7 +595,7 @@ footer {
 footer  >.region_one {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0;
     width: 100%;
     height: 200px;
@@ -604,8 +604,7 @@ footer  >.region_one {
 .region_one_links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
+    width: 20%;
 }
 
 .footer_img_area {
@@ -712,7 +711,7 @@ footer >.meta li a {
     height: 170px;
   }
   .credits a img {
-    size: 80%;
+    size: 100%;
   }
   .credits span>p {
     display: none;
@@ -737,9 +736,6 @@ footer >.meta li a {
     width: 80%;
     height: 100%;
   }
-  .question-icon {
-    display: none;
-  }
   .contact {
     display: flex;
     flex-direction: column;
@@ -752,16 +748,20 @@ footer >.meta li a {
   footer li a {
     color: #250791;
   }
-  .region_one_links {
+  .region_one {
+    justify-content: space-evenly;
     size: 80%;
-    width: 59%;
+    width: 100%;
   }
-  .region_one_links ul {
-    padding-left: 1px;
+  .region_one_links {
+    width: 30%;
+  }
+  .region_one_links>.view {
+    display: none;
   }
   .footer_img_area {
-    size: 40%;
-    width: 40%;
+    size: 50%;
+    width: 45%;
     height: 100%;
   }
   footer>.meta ul {
@@ -788,7 +788,11 @@ footer >.meta li a {
   }
   .desktop_img {
     display: block;
-    max-width: 40%;
+    max-width: 45%;
+  }
+  .in_image_text {
+    max-width: 55%;
+    min-width: 50%;
   }
   .mobile_img {
     display: none;
