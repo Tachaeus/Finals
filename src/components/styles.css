@@ -760,8 +760,8 @@ footer >.meta li a {
     display: none;
   }
     .region_one_links>.socials {
-        justify-content: center;
-    } 
+    align-items: center;
+  }
   .footer_img_area {
     size: 50%;
     width: 45%;
@@ -813,9 +813,9 @@ footer >.meta li a {
     .region_one_links>.view {
         display: none;
     }
-    .region_one_links>.socials li {
-        justify-content: center;
-    } 
+    .region_one_links>.socials {
+    align-items: center;
+  }
 }
 
 @media (min-width: 1025px) {
