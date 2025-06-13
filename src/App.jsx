@@ -5,12 +5,13 @@ import './App.css'
 
 function App() {
   const [click, setClick] = useState(false);
-  const Hamburger = <button color="black" onClick={() => setClick(!click)}>≣</button>
-  const Close = <button color="black" onClick={() => setClick(!click)}>≣</button>
+  const Hamburger = <button onClick={() => setClick(!click)}>≣</button>
+  const Close = <button onClick={() => setClick(!click)}>⨉</button>
 
   return (
     <section className="section_prime">
-    <div className="body">
+      <div className="body">
+      <section className="sect_first">
       <header>
         <nav>
             <ul>
@@ -40,6 +41,7 @@ function App() {
             </ul>
         </nav>
       </header>
+      </section>
       <Card />
       <footer>
         <div className="region_one">

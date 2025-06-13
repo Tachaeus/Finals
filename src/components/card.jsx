@@ -53,11 +53,11 @@ function Card() {
                 <section className="section_one">
                 <span className="start">
                     <img className="desktop_img" src="https://www.shakebugs.com/wp-content/uploads/2022/05/What-is-collaborative-coding.png" />
-                    <div className="in_image_text">
+                    <span className="in_image_text">
                         <p>Masterful Coding Solutions <br /> Optimizing Potential</p>
-                        <p>Our work may not be the best you've ever seen,<br /> <span>but rest assured,</span><br /> it is what's just right for you!</p>
-                        <a href=""><button>Take a Look</button></a>
-                    </div>
+                        <p>Our work may not be the perfect,<br /> <span>but rest assured,</span><br /> it is what's just right for you!</p>
+                        <button>Take a Look</button>
+                    </span>
                     <img className="mobile_img" src="https://i.ibb.co/zTPp2fcv/removed-3.png" />
                 </span><br /><br />
                 <div className="find">
@@ -65,7 +65,7 @@ function Card() {
                         <p>There's not much to it.</p>
                         <h3>Highly skilled developers fully-vetted and <br />guaranteed to give you your money's worth.</h3>
                         <p>Only a click of a button away.</p>
-                        <button>Find Me One</button>
+                        <button>Find One</button>
                     </div>
                     <img className="find_img" src="https://i.ibb.co/qMC15G57/removed-5.png" />
                 </div><br />
@@ -172,11 +172,11 @@ function Card() {
                         questions.map((things, e) => (
                             <span key={things.id} className="query" onClick={() => setActive(e === active ? undefined : e)}>
                                 
-                                <div className="question">{things.question}
+                                <span className="question">{things.question}
                                 <span className="question-icon">
                                     {e === active ? "×" : "+"}
                                 </span>
-                                </div>
+                                </span>
                                 {
                                 e === active && <p className="answer">{things.answer}</p>
                                 }
